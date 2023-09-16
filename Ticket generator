@@ -1,0 +1,87 @@
+import sys
+def BookBusTicket():
+    name=str(input("Enter the Name Of Customer: "))
+    sourcename=str(input("Enter the Source Name: "))
+    destination=str(input("Enter the Name of Destination: "))
+    noofperson=int(input("Enter the No of Person "))
+    seatno=int(input("Enter the Seat Number "))
+    fare = 500
+    f=fare*noofperson
+    gst=f*0.18
+    totalfare=f+gst
+    print("~"*60)
+    print("-----Welcome to Tour & Travels------")
+    print("Name   :",name)
+    print("Source Name   :",sourcename)
+    print("Destination   :", destination)
+    print("No of Person   :",noofperson)
+    print("Seat Number  :",seatno)
+    print("TotalFare  :",totalfare)
+
+def BookTrainTicket():
+    name=str(input("Enter the Name Of Customer: "))
+    sourcename=str(input("Enter the Source Name: "))
+    destination=str(input("Enter the Name of Destination: "))
+    noofperson=int(input("Enter the No of Person "))
+    seatno=int(input("Enter the Seat Number "))
+    fare = 400
+    f=fare*noofperson
+    gst=f*0.6
+    totalfare=f+gst
+    print("~"*60)
+    print("-----Welcome to Indian Railway------")
+    print("Name   :",name)
+    print("Source Name   :",sourcename)
+    print("Destination   :", destination)
+    print("No of Person   :",noofperson)
+    print("Seat Number  :",seatno)
+    print("TotalFare  :",totalfare)
+
+def BookFlightTicket():
+    name=str(input("Enter the Name Of Customer: "))
+    sourcename=str(input("Enter the Source Name: "))
+    destination=str(input("Enter the Name of Destination: "))
+    noofperson=int(input("Enter the No of Person "))
+    seatno=int(input("Enter the Seat Number "))
+    fare = 1000
+    f=fare*noofperson
+    gst=f*0.21
+    totalfare=f+gst
+    print("~"*60)
+    print("-----Welcome to Air India------")
+    print("Name   :",name)
+    print("Source Name   :",sourcename)
+    print("Destination   :", destination)
+    print("No of Person   :",noofperson)
+    print("Seat Number  :",seatno)
+    print("TotalFare  :",totalfare)    
+
+    
+while True:
+    print("~"*60)
+    print("The Ticket Generator Made by Jagdish")
+    print("~"*60)
+    print("\n\n1. BookBusTicket")
+    print("2. BookTrainTicket") 
+    print("3. BookFlightTicket")
+    print("0. Exit") 
+    
+    Choice=int(input("Enter the Choice"))
+    if Choice==1:
+       BookBusTicket()
+    elif Choice==2:
+        BookTrainTicket()
+    elif Choice==3:
+        BookFlightTicket()
+    elif Choice==0:
+        sys.exit
+    else:
+        print("PAISA KAMA BSDK")    
+
+
+
+
+    
+
+
+  
